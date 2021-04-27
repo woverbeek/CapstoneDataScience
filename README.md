@@ -9,7 +9,7 @@ and academic partners. For this iteration of the class, JHU is partnering with S
 This repository contains the following files/folders:
 
 1. README.md: This readme.
-2. capstone.R: Creates the data objects from cleaned source files.
+2. preparedata.Rmd: Creates the data objects from cleaned source files.
 3. ui.R, server.R, helpers.R: Shiny application
 4. capstone.Rpres: R presentation file describing the application.
 5. data: Folder of data objects for Shiny application.
