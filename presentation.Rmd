@@ -1,0 +1,30 @@
+---
+title: "Word Prediction: Coursera Data Science Capstone Project"
+output: ioslides_presentation
+author: "William Overbeek"
+date: "April 27th 2021"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+As part of the Capstone Class of the Data Science Specialization offered from John Hopkins University, a predictive model was developed to propose words based on the previous words in a sentence.
+
+To accomplish this objective, data from SwiftKey was downloaded, cleaned and used to develop a predictive model.
+
+## Algorithm development
+
+The algorithm that allow to predict the next word based on the previous words was based on a N-gram model. Using a subset of the Swiftkey dataset, **maximum likelihood estimation** of unigrams, bigrams and trigrams were computed.
+
+To improve accuracy, the **Jelinek-Mercer smoothing** was used in the algorithm, combining the unigrams, bigrams and trigrams probabilities.
+
+## Shiny App
+
+The algorithm was included in a shiny app. This app accepts texts input and suggest words for completion of the inputed text. The web-app can be found  <a href="https://woverbeek.shinyapps.io/Prediction_word//"> here</a>
+
+## Thank you for your time
+
+I hope you enjoyed this presentation and the web-app!
